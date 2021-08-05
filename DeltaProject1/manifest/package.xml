@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+    <types>
+        <members>Boat_Sold__c</members>
+        <members>Customer__c</members>
+        <members>Parts_Order_List__c</members>
+        <members>Boat_Manufacturing__c</members>
+        <members>Supplier__c</members>
+        <name>CustomObject</name>
+    </types>
+    <version>52.0</version>
+</Package>
