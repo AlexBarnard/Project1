@@ -1,12 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Package xmlns="http://soap.sforce.com/2006/04/metadata">
-    <types>
-        <members>Boat_Sold__c</members>
-        <members>Customer__c</members>
-        <members>Parts_Order_List__c</members>
-        <members>Boat_Manufacturing__c</members>
-        <members>Supplier__c</members>
-        <name>CustomObject</name>
-    </types>
-    <version>52.0</version>
+	<types>
+		<members>*</members>
+		<name>ApprovalProcess</name>
+	</types>
+	<types>
+		<members>Boat_Manufacturing__c</members>
+		<members>Boat_Sold__c</members>
+		<members>Customer__c</members>
+		<members>Parts_Order_List__c</members>
+		<members>Supplier__c</members>
+		<name>CustomObject</name>
+	</types>
+	<types>
+		<members>Assembler</members>
+		<members>CEO</members>
+		<members>Chief Manufacturing Executive</members>
+		<members>Director of Sales</members>
+		<name>Profile</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>Role</name>
+	</types>
+	<types>
+		<members>Boat_Sold__c.Email on boat sold</members>
+		<members>Customer__c.Welcome Email</members>
+		<name>WorkflowRule</name>
+	</types>
+	<version>51.0</version>
 </Package>
