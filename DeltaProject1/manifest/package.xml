@@ -28,5 +28,21 @@
 		<members>Customer__c.Welcome Email</members>
 		<name>WorkflowRule</name>
 	</types>
+	<types>
+		<member>*</members>
+		<name>ApexClasses</name>
+	</types>
+	<types>
+		<member>*</members>
+		<name>ApexTriggers</name>
+	</types>
+	<types>
+		<member>*</members>
+		<name>ApexPages</name>
+	</types>
+	<types>
+		<member>*</members>
+		<name>GlobalPicklist</name>
+	</types>
 	<version>51.0</version>
 </Package>
