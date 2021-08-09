@@ -1,15 +1,10 @@
 public class newPartsController {
     //whenever a user enters data, its stored in these variables.
     Parts_Order_List__c parts;
-    Supplier__c supplier;
 
     public Parts_Order_List__c getParts() {
         if (parts == null) parts = new Parts_Order_List__c();
         return parts;
-    }
-    public Supplier__c getSupplier() {
-        if(supplier == null) supplier = new Supplier__c();
-        return supplier;
     }
 
     public PageReference step1() {
@@ -20,11 +15,16 @@ public class newPartsController {
         return Page.partPage2;
     }
     
-    public PageReference cancel() {
-        Pagereference opportunityPage = new Pagereference('/006');
-        opportunityPage.setRedirect(true);
-        return opportunityPage;
+    public PageReference step3() {
+        return Page.partPage3;
     }
+
+    public PageReference cancel() {
+        PageReference refPage = new PageReference('/006');
+        refPage.setRedirect(true);
+        return refPage; 
+    }
+
 
     public PageReference save() {
 
