@@ -7,4 +7,6 @@ public with sharing class EmptyManufacturingDateController {
         );
         return boats;
     }
+
+    public void edit(){}
 }

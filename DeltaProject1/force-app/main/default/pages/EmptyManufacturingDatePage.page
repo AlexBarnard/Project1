@@ -1,11 +1,18 @@
-<apex:page controller="EmptyManufacturingDateController">
-    <apex:pageBlock>
-        <apex:pageBlockTable value='{! EmptyManufacturingDate}' var='boat'>
-            <apex:column headerValue="Name">
-                <apex:outputLink value="{!URLFOR($Action.Boat_Manufacturing__c.View , boat.id)}">
-                    {!boat.name}
-                </apex:outputLink>
-            </apex:column>
-        </apex:pageBlockTable>
-    </apex:pageBlock>
+<apex:page controller="EmptyManufacturingDateController" lightningStylesheets="true">
+    <apex:form>
+        <apex:pageBlock id="boatManufacturingList">
+            <apex:pageBlockTable value='{! EmptyManufacturingDate}' var='boat'>
+                <apex:column headerValue="Name">
+                    <apex:outputLink value="{!URLFOR($Action.Boat_Manufacturing__c.View , boat.id)}">
+                        {!boat.name}
+                    </apex:outputLink>
+                </apex:column>
+                <apex:column id="StartDate" headerValue="Manufacturing Start Date">
+                    <apex:inputField value="{!boat.Manufacturing_Start_Date__c}" />
+                </apex:column>
+                <apex:inlineEditSupport/>
+            </apex:pageBlockTable>
+            <apex:commandButton value="SAVE" />
+        </apex:pageBlock>
+    </apex:form>
 </apex:page>
