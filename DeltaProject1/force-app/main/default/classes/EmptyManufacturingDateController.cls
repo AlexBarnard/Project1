@@ -1,12 +1,18 @@
 public with sharing class EmptyManufacturingDateController {
-    public List<Boat_Manufacturing__c> getEmptyManufacturingDate(){
+    public List<Boat_Manufacturing__c> boats{get{
         List<Boat_Manufacturing__c> boats = Database.query(
             'SELECT Id, Name, Manufacturing_Start_Date__c '+
             'FROM Boat_Manufacturing__c '+
             'WHERE Manufacturing_Start_Date__c = null '
         );
         return boats;
+    } set;}
+
+    public PageReference save(){
+        return null;
     }
 
-    public void edit(){}
+    public PageReference saveAll(){
+        return null;
+    }
 }
