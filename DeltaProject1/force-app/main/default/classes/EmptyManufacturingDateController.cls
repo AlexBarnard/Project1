@@ -1,6 +1,6 @@
 public with sharing class EmptyManufacturingDateController {
     public List<Boat_Manufacturing__c> boats{get; set;}
-    public Boat_Manufacturing__c boat{get; set;}
+    public string boatId{get; set;}
 
     public EmptyManufacturingDateController(){
         List<Boat_Manufacturing__c> manufacturingList = Database.query(
@@ -9,6 +9,15 @@ public with sharing class EmptyManufacturingDateController {
             'WHERE Manufacturing_Start_Date__c = null '
         );
         boats = manufacturingList;
+    }
+
+    public PageReference save(){
+        for(Boat_Manufacturing__c boat:boats){
+            if(boat.id == boatId){
+                update boat;
+            }
+        }
+        return null;
     }
 
     public PageReference saveAll(){
