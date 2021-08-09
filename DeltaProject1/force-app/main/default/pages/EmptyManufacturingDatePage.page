@@ -9,7 +9,6 @@
                 </apex:column>
                 <apex:column id="StartDate" headerValue="Manufacturing Start Date">
                     <apex:inputField value="{!boat.Manufacturing_Start_Date__c}" />
-                    <apex:commandButton value="SAVE" action="{!save}" />
                 </apex:column>
             </apex:pageBlockTable>
             <apex:pageBlockButtons>
