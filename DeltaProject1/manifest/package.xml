@@ -34,6 +34,16 @@
 		<name>GlobalValueSet</name>
 	</types>
 	<types>
+		<members>Boat_Manufacturing__c-Boat Manufacturing Layout</members>
+		<members>Boat_Sold__c-Boat Sold Layout</members>
+		<members>Boat_Sold__c-Inshore Fishing</members>
+		<members>Boat_Sold__c-Offshore Boat</members>
+		<members>Customer__c-Customer Layout</members>
+		<members>Parts_Order_List__c-Part Order List Layout</members>
+		<members>Supplier__c-Supplier Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
 		<members>Assembler</members>
 		<members>CEO</members>
 		<members>Chief Manufacturing Executive</members>

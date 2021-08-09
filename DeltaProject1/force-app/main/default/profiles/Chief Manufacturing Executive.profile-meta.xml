@@ -123,6 +123,33 @@
         <field>Supplier__c.Website__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <layoutAssignments>
+        <layout>Boat_Manufacturing__c-Boat Manufacturing Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Boat_Sold__c-Boat Sold Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Boat_Sold__c-Boat Sold Layout</layout>
+        <recordType>Boat_Sold__c.Walkaround_Boat</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Boat_Sold__c-Inshore Fishing</layout>
+        <recordType>Boat_Sold__c.Inshore_Fishing_Boat</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Boat_Sold__c-Offshore Boat</layout>
+        <recordType>Boat_Sold__c.Offshore_Fishing_Boats</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Customer__c-Customer Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Parts_Order_List__c-Part Order List Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Supplier__c-Supplier Layout</layout>
+    </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
