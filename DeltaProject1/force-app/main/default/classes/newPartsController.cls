@@ -20,9 +20,9 @@ public class newPartsController {
     }
 
     public PageReference cancel() {
-        PageReference refPage = new PageReference('/006');
-        refPage.setRedirect(true);
-        return refPage; 
+        PageReference pr = new PageReference('/'+Schema.SObjectType.Parts_Order_List__c.getKeyPrefix());
+        pr.setRedirect(true);
+        return pr;
     }
 
 
