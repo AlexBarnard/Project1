@@ -1,5 +1,5 @@
 <apex:page controller="BoatSoldController">
-<h1> Center Console Inshore </h1>
+    <h1>Center Console Inshore</h1>
     <apex:form >
         <apex:pageBlock >
            <apex:pageBlockSection >
