@@ -68,7 +68,7 @@ public class BoatSoldController {
    // This method cancels the wizard, and returns the user to the 
    // Opportunities tab
     public PageReference cancel() {
-      PageReference boatPage = new PageReference('/-'+ Schema.SObjectType.Boat_Sold__c.getKeyPrefix());
+      PageReference boatPage = new PageReference('/'+ Schema.SObjectType.Boat_Sold__c.getKeyPrefix());
       boatPage.setRedirect(true);
       return boatPage; 
     }
@@ -79,7 +79,7 @@ public class BoatSoldController {
    public PageReference save() {
        insert boatsold;
        
-       PageReference boatPage = new PageReference('/-'+ Schema.SObjectType.Boat_Sold__c.getKeyPrefix());
+       PageReference boatPage = new PageReference('/'+ Schema.SObjectType.Boat_Sold__c.getKeyPrefix());
       boatPage.setRedirect(true);
 
       return boatPage;
