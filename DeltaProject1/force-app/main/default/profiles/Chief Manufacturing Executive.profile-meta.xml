@@ -198,6 +198,10 @@
         <enabled>false</enabled>
     </pageAccesses>
     <pageAccesses>
+        <apexPage>CreateBoat</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
+    <pageAccesses>
         <apexPage>Flatinshore</apexPage>
         <enabled>false</enabled>
     </pageAccesses>

@@ -1,4 +1,5 @@
 <apex:page controller="BoatSoldController">
+    <h1>Flat Inshore</h1>
     <apex:form >
         <apex:pageBlock >
            <apex:pageBlockSection >
@@ -6,7 +7,8 @@
            </apex:pageBlockSection>
            <apex:pageBlockButtons >
                <apex:commandButton value="Previous Boat" action="{!centerinshore}"></apex:commandButton> <br/>
-               <apex:commandButton value="Next Boat" action="{!centeroffshore}"></apex:commandButton>
+               <apex:commandButton value="Next Boat" action="{!centeroffshore}"></apex:commandButton> <br/>
+               <apex:commandButton value="Buy" action="{!boat3}"></apex:commandButton>
            </apex:pageBlockButtons>
         </apex:pageBlock>
     </apex:form>
