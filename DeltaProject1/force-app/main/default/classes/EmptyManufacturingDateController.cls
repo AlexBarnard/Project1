@@ -12,16 +12,41 @@ public with sharing class EmptyManufacturingDateController {
     }
 
     public PageReference save(){
+        List<Boat_Manufacturing__c> boatSave = new List<Boat_Manufacturing__c>();
         for(Boat_Manufacturing__c boat:boats){
             if(boat.id == boatId){
-                update boat;
+                boatSave.add(boat);
             }
+            update boatSave;
         }
         return null;
     }
 
     public PageReference saveAll(){
         update boats;
+        return null;
+    }
+
+    public PageReference clear(){
+        for(Boat_Manufacturing__c boat:boats){
+            if(boat.id == boatId){
+                boat.Manufacturing_Start_Date__c = NULL;
+            }
+        }
+        return null;
+    }
+
+    public PageReference clearAll(){
+        for(Boat_Manufacturing__c boat:boats){
+            boat.Manufacturing_Start_Date__c = NULL;
+        }
+        return null;
+    }
+
+    public Pagereference setAllToday(){
+        for(Boat_Manufacturing__c boat:boats){
+            boat.Manufacturing_Start_Date__c = System.today();
+        }
         return null;
     }
 }
