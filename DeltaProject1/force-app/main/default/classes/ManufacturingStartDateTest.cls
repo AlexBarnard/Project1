@@ -40,7 +40,10 @@ public class ManufacturingStartDateTest {
         Pagereference currentPage = Page.EmptyManufacturingDatePage;
         Test.setCurrentPage(currentPage);
         EmptyManufacturingDateController emdc = new EmptyManufacturingDateController();
-        emdc.boats[0].Manufacturing_Start_Date__c = Date.newInstance(2021, 12, 25);
+        Double randomNumber = Math.random(); 
+        Integer arrayLength = emdc.boats.size(); 
+        Integer randomIndex = (randomNumber *(arrayLength-1)).intValue(); 
+        emdc.boats[randomIndex].Manufacturing_Start_Date__c = Date.newInstance(2021, 12, 25);
         List<Apexpages.Message> msgs;
         Test.startTest();
         emdc.saveAll();
@@ -59,10 +62,17 @@ public class ManufacturingStartDateTest {
         Pagereference currentPage = Page.EmptyManufacturingDatePage;
         Test.setCurrentPage(currentPage);
         EmptyManufacturingDateController emdc = new EmptyManufacturingDateController();
-        emdc.boats[0].Manufacturing_Start_Date__c = Date.newInstance(2021, 12, 25);
+        Double randomNumber = Math.random(); 
+        Integer arrayLength = emdc.boats.size(); 
+        Integer randomIndex = (randomNumber *(arrayLength-1)).intValue(); 
+        emdc.boats[randomIndex].Manufacturing_Start_Date__c = Date.newInstance(2021, 12, 25);
         List<Apexpages.Message> msgs;
         Test.startTest();
-        emdc.boatId = emdc.boats[0].id;
+        for(Boat_Manufacturing__c boat:emdc.boats){
+            if(boat.Manufacturing_Start_Date__c != NULL){
+                emdc.boatId = boat.id;
+            }
+        }
         emdc.save();
         msgs = ApexPages.getMessages();
         System.assert(ApexPages.hasMessages());
