@@ -17,13 +17,21 @@ public with sharing class EmptyManufacturingDateController {
             if(boat.id == boatId){
                 boatSave.add(boat);
             }
-            update boatSave;
+        }
+        try{
+        update boatSave;
+        }catch(Exception e){
+            ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.Error, e.getMessage()));
         }
         return null;
     }
 
     public PageReference saveAll(){
-        update boats;
+        try{
+            update boats;
+            }catch(Exception e){
+                ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.Error, e.getMessage()));
+            }
         return null;
     }
 

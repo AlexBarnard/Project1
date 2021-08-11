@@ -3,9 +3,7 @@
         <apex:pageBlock id="boatManufacturingList" title="Empty Manufacturing Start Dates">
             <apex:pageBlockTable value='{! boats}' var='b'>
                 <apex:column style="width:15%">
-                    <apex:pageBlock id="hiddenBlock" rendered="false"></apex:pageBlock>
-                    <!-- Weird thing with param and commandButton. Not needed with commandLink -->
-                    <apex:commandButton value="SAVE" action="{!save}" reRender="hiddenBlock">
+                    <apex:commandButton value="SAVE" action="{!save}" reRender="boatManufacturingList">
                         <apex:param name="boatId" assignTo="{!boatId}" value="{!b.id}" /> </apex:commandButton>
                     <apex:commandButton value="CLEAR" action="{!clear}" reRender="boatManufacturingList">
                         <apex:param name="boatId" assignTo="{!boatId}" value="{!b.id}" />
