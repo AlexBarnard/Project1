@@ -73,4 +73,31 @@ public class ManufacturingStartDateTest {
         system.assert(b);//Assert the Page Message was Properly Displayed
         Test.stopTest();
     }
+
+    @isTest
+    static void testClearMethods(){
+        Pagereference currentPage = Page.EmptyManufacturingDatePage;
+        Test.setCurrentPage(currentPage);
+        EmptyManufacturingDateController emdc = new EmptyManufacturingDateController();
+        emdc.setAllToday();
+        Double randomNumber = Math.random(); 
+        Integer arrayLength = emdc.boats.size(); 
+        Integer randomIndex = (randomNumber *(arrayLength-1)).intValue(); 
+        emdc.boatId = emdc.boats[randomIndex].id;
+        emdc.clear();
+        Integer count = 0;
+        for(Boat_Manufacturing__c boat:emdc.boats){
+            if(boat.Manufacturing_Start_Date__c == NULL){
+                count++;
+            }
+        }
+        system.assertEquals(1, count);
+        emdc.clearAll();
+        for(Boat_Manufacturing__c boat:emdc.boats){
+            if(boat.Manufacturing_Start_Date__c != NULL){
+                count++;
+            }
+        }
+        system.assertEquals(1, count);
+    }
 }
