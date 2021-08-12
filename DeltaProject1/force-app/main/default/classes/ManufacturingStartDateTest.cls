@@ -1,12 +1,17 @@
 @isTest
 public class ManufacturingStartDateTest {
+    static Integer numNull = 100; //number of records populated with null start dates
+    static Integer notNull = 30; //number of records populated with non-null start dates
+
     @TestSetup
     static void makeData(){
         List<Boat_Manufacturing__c> boats = new List<Boat_Manufacturing__c>();
-        boats.add(new Boat_Manufacturing__c(Name = 'Test1', Manufacturing_Start_Date__c = Null));
-        boats.add(new Boat_Manufacturing__c(Name = 'Test2', Manufacturing_Start_Date__c = Null));
-        boats.add(new Boat_Manufacturing__c(Name = 'Test3', Manufacturing_Start_Date__c = Null));
-        boats.add(new Boat_Manufacturing__c(Name = 'Test4', Manufacturing_Start_Date__c = System.today()));
+        for(Integer i=0; i<numNull; i++){
+            boats.add(new Boat_Manufacturing__c(Name = 'NullDate', Manufacturing_Start_Date__c = Null));
+        }
+        for(Integer i=0; i<notNull; i++){
+            boats.add(new Boat_Manufacturing__c(Name = 'NotNull', Manufacturing_Start_Date__c = System.today()));
+        }
         insert boats;
     }
     @isTest
@@ -15,7 +20,7 @@ public class ManufacturingStartDateTest {
         Pagereference currentPage = Page.EmptyManufacturingDatePage;
         Test.setCurrentPage(currentPage);
         EmptyManufacturingDateController emdc = new EmptyManufacturingDateController();
-        System.assertEquals(emdc.boats.size(), 3);
+        System.assertEquals(emdc.boats.size(), numNull);
         emdc.setAllToday();
         emdc.saveAll();
         System.assertEquals(emdc.boats[0].Manufacturing_Start_Date__c, System.today());
@@ -36,16 +41,32 @@ public class ManufacturingStartDateTest {
     }
 
     @isTest
-    static void testValidationErrorSaveAll(){
+    static void testSaveAll(){
         Pagereference currentPage = Page.EmptyManufacturingDatePage;
         Test.setCurrentPage(currentPage);
         EmptyManufacturingDateController emdc = new EmptyManufacturingDateController();
+
+        //checks saveAll for random number of edits
         Double randomNumber = Math.random(); 
         Integer arrayLength = emdc.boats.size(); 
-        Integer randomIndex = (randomNumber *(arrayLength-1)).intValue(); 
-        emdc.boats[randomIndex].Manufacturing_Start_Date__c = Date.newInstance(2021, 12, 25);
-        List<Apexpages.Message> msgs;
+        Integer randomNum = (randomNumber *(arrayLength-1)).intValue();
+        Integer counter = 0;
+        for(Boat_Manufacturing__c boat:emdc.boats){
+            if(counter<randomNum){
+                boat.Manufacturing_Start_Date__c = System.Today();
+            }
+            counter++;
+        }
+        emdc.saveAll();
+        List<Boat_Manufacturing__c> updatedList = Database.Query('SELECT id '+
+        'FROM Boat_Manufacturing__c '+
+        'WHERE Manufacturing_Start_Date__c = null ');
+        System.assertEquals(numNull-randomNum, updatedList.size());
+
+        //chekc trigger validation for saveAll
         Test.startTest();
+        getRanBoat(emdc.boats).Manufacturing_Start_Date__c = Date.newInstance(2021, 12, 25);
+        List<Apexpages.Message> msgs;
         emdc.saveAll();
         msgs = ApexPages.getMessages();
         System.assert(ApexPages.hasMessages());
@@ -58,18 +79,30 @@ public class ManufacturingStartDateTest {
     }
 
     @isTest
-    static void testValidationErrorSave(){
+    static void testSave(){
         Pagereference currentPage = Page.EmptyManufacturingDatePage;
         Test.setCurrentPage(currentPage);
-        EmptyManufacturingDateController emdc = new EmptyManufacturingDateController();
-        Double randomNumber = Math.random(); 
-        Integer arrayLength = emdc.boats.size(); 
-        Integer randomIndex = (randomNumber *(arrayLength-1)).intValue(); 
-        emdc.boats[randomIndex].Manufacturing_Start_Date__c = Date.newInstance(2021, 12, 25);
-        List<Apexpages.Message> msgs;
-        Test.startTest();
+        EmptyManufacturingDateController emdc = new EmptyManufacturingDateController(); 
+
+        emdc.setAllToday();
+        emdc.boatId = getRanBoat(emdc.boats).id;
+        emdc.save();
+        Integer count = 0;
         for(Boat_Manufacturing__c boat:emdc.boats){
-            if(boat.Manufacturing_Start_Date__c != NULL){
+            if(boat.Manufacturing_Start_Date__c != Null){
+                count++;
+            }
+        }
+        List<Boat_Manufacturing__c> updatedList = Database.Query('SELECT id '+
+        'FROM Boat_Manufacturing__c '+
+        'WHERE Manufacturing_Start_Date__c = null ');
+        System.assertEquals(numNull-1, updatedList.size());
+
+        Test.startTest();
+        getRanBoat(emdc.boats).Manufacturing_Start_Date__c = Date.newInstance(2021, 12, 25);
+        List<Apexpages.Message> msgs;
+        for(Boat_Manufacturing__c boat:emdc.boats){
+            if(boat.Manufacturing_Start_Date__c == Date.newInstance(2021, 12, 25)){
                 emdc.boatId = boat.id;
             }
         }
@@ -90,10 +123,7 @@ public class ManufacturingStartDateTest {
         Test.setCurrentPage(currentPage);
         EmptyManufacturingDateController emdc = new EmptyManufacturingDateController();
         emdc.setAllToday();
-        Double randomNumber = Math.random(); 
-        Integer arrayLength = emdc.boats.size(); 
-        Integer randomIndex = (randomNumber *(arrayLength-1)).intValue(); 
-        emdc.boatId = emdc.boats[randomIndex].id;
+        emdc.boatId = getRanBoat(emdc.boats).id;
         emdc.clear();
         Integer count = 0;
         for(Boat_Manufacturing__c boat:emdc.boats){
@@ -109,5 +139,12 @@ public class ManufacturingStartDateTest {
             }
         }
         system.assertEquals(1, count);
+    }
+
+    static Boat_Manufacturing__c getRanBoat(List<Boat_Manufacturing__c> input){
+        Double randomNumber = Math.random(); 
+        Integer arrayLength = input.size(); 
+        Integer randomIndex = (randomNumber *(arrayLength-1)).intValue();
+        return input[randomIndex];
     }
 }
