@@ -66,4 +66,67 @@ public class BoatSoldControllerTest {
            System.assertNotEquals(null, pg); //assertion
         }
 
+        @isTest public static void BayBoat2Test(){
+       
+         PageReference pageRef = Page.Bayinshore;
+         //   Test.setCurrentPage(pageRef);
+                  
+         BoatSoldController cntr = new BoatSoldController();
+         PageReference pf = cntr.Bayinshore();
+         PageReference pg = cntr.boat1();
+         System.assertNotEquals(null, pg); 
+        }
+     
+        @isTest public static void CenterinshoreBoat2test(){
+           
+            PageReference pageRef = Page.Centerinshore;
+            //   Test.setCurrentPage(pageRef);
+                     
+            BoatSoldController cntr = new BoatSoldController();
+              PageReference pf = cntr.Centerinshore();
+              PageReference pg = cntr.boat2();
+              System.assertNotEquals(null, pg); //assertion
+           }
+     
+           @isTest public static void FlatinshoreBoat2test(){
+           
+             PageReference pageRef = Page.Flatinshore;
+             //   Test.setCurrentPage(pageRef);
+                      
+             BoatSoldController cntr = new BoatSoldController();
+               PageReference pf = cntr.Flatinshore();
+               PageReference pg = cntr.boat3();
+               System.assertNotEquals(null, pg); //assertion
+            }
+            @isTest public static void CenteroffshoreBoat2test(){
+           
+             PageReference pageRef = Page.Centeroffshore;
+             //   Test.setCurrentPage(pageRef);
+                      
+             BoatSoldController cntr = new BoatSoldController();
+               PageReference pf = cntr.Centeroffshore();
+               PageReference pg = cntr.boat4();
+               System.assertNotEquals(null, pg); //assertion
+            }
+            @isTest public static void ConvertibleoffshoreBoat2test(){
+           
+             PageReference pageRef = Page.Convertibleoffshore;
+             //   Test.setCurrentPage(pageRef);
+                      
+             BoatSoldController cntr = new BoatSoldController();
+               PageReference pf = cntr.Convertibleoffshore();
+               PageReference pg = cntr.boat5();
+               System.assertNotEquals(null, pg); //assertion
+            }
+            @isTest public static void WalkaroundoffshoreBoat2test(){
+           
+             PageReference pageRef = Page.Walkaroundoffshore;
+             //   Test.setCurrentPage(pageRef);
+                      
+             BoatSoldController cntr = new BoatSoldController();
+               PageReference pf = cntr.Walkaroundoffshore();
+               PageReference pg = cntr.boat6();
+               System.assertNotEquals(null, pg); //assertion
+            }
+
 }
