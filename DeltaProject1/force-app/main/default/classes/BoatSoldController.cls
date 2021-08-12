@@ -66,16 +66,15 @@ public class BoatSoldController {
    }
     
    // This method cancels the wizard, and returns the user to the 
-   // Opportunities tab
+   // Boat_Sold Page
     public PageReference cancel() {
       PageReference boatPage = new PageReference('/'+ Schema.SObjectType.Boat_Sold__c.getKeyPrefix());
       boatPage.setRedirect(true);
       return boatPage; 
     }
 
-   // This method performs the final save for all four objects, and
-   // then navigates the user to the detail page for the new
-   // opportunity.
+   // This method performs save for the Boat_Sold, and
+   // then returns the user to the Boat_Sold Home page.
    public PageReference save() {
        insert boatsold;
        
