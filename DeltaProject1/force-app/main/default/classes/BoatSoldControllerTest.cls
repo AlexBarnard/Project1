@@ -8,24 +8,24 @@ public class BoatSoldControllerTest {
  //    Test.StartTest();
  //       pageRef.getParameters().put('Id', String.valueOf(b.Id));
     
-    @isTest static void BayBoat1Test(){
+    @isTest public static void BayBoat1Test(){
        
-     //PageReference pageRef = Page.Bayinshore;
+     PageReference pageRef = Page.Bayinshore;
      //   Test.setCurrentPage(pageRef);
               
      BoatSoldController cntr = new BoatSoldController();
        PageReference pg = cntr.Bayinshore();
-       System.assertEquals('/apex/Bayinshore', pg); //assertion
+       System.assertEquals(pageRef, pg); //assertion
     }
 
-    @isTest static void CenterinshoreBoat1test(){
+    @isTest public static void CenterinshoreBoat1test(){
        
-        //PageReference pageRef = Page.Bayinshore;
+        PageReference pageRef = Page.Bayinshore;
         //   Test.setCurrentPage(pageRef);
                  
         BoatSoldController cntr = new BoatSoldController();
           PageReference pg = cntr.Centerinshore();
-          System.assertEquals('/apex/Centerinshore', pg); //assertion
+          System.assertEquals(pageRef, pg); //assertion
        }
 
 
