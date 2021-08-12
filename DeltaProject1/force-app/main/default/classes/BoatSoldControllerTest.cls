@@ -129,4 +129,16 @@ public class BoatSoldControllerTest {
                System.assertNotEquals(null, pg); //assertion
             }
 
+            @isTest public static void WalkaroundoffshoreBoatCanceltest(){
+           
+               PageReference pageRef = Page.Walkaroundoffshore;
+               //   Test.setCurrentPage(pageRef);
+                        
+               BoatSoldController cntr = new BoatSoldController();
+                 PageReference pf = cntr.Walkaroundoffshore();
+                 PageReference pg = cntr.boat6();
+                 Pagereference pb = cntr.cancel();
+                 System.assertNotEquals(null, pb); //assertion
+              }
+
 }
