@@ -7,6 +7,7 @@ public class BoatSoldControllerTest {
        
  //    Test.StartTest();
  //       pageRef.getParameters().put('Id', String.valueOf(b.Id));
+  //System.assertEquals(null, pg); //assertion
     
     @isTest public static void BayBoat1Test(){
        
@@ -14,8 +15,8 @@ public class BoatSoldControllerTest {
      //   Test.setCurrentPage(pageRef);
               
      BoatSoldController cntr = new BoatSoldController();
-       PageReference pg = cntr.Bayinshore();
-       System.assertEquals(pageRef, pg); //assertion
+     PageReference pg = cntr.Bayinshore();
+     System.assertNotEquals(null, pg); 
     }
 
     @isTest public static void CenterinshoreBoat1test(){
@@ -25,7 +26,7 @@ public class BoatSoldControllerTest {
                  
         BoatSoldController cntr = new BoatSoldController();
           PageReference pg = cntr.Centerinshore();
-          System.assertEquals(pageRef, pg); //assertion
+          System.assertNotEquals(null, pg); //assertion
        }
 
 
