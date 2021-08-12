@@ -20,7 +20,7 @@ public class BoatSoldControllerTest {
 
     @isTest public static void CenterinshoreBoat1test(){
        
-        PageReference pageRef = Page.Bayinshore;
+        PageReference pageRef = Page.Centerinshore;
         //   Test.setCurrentPage(pageRef);
                  
         BoatSoldController cntr = new BoatSoldController();
