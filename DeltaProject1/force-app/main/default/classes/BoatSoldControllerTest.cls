@@ -1,27 +1,32 @@
 @isTest
 public class BoatSoldControllerTest {
-    
-    @isTest static void testBayBoat(){
-      
+
     //  Boat_Sold__c b = new Boat_Sold__c(Name= 'Boat1', Source__c='Web',  
     //   Works__c='Gen Repairs', S);
     //   insert b;
        
  //    Test.StartTest();
- 
- //    PageReference pageRef = Page.;
- //       Test.setCurrentPage(pageRef);
-        
- //       ApexPages.currentPage().getParameters().put('id', String.valueOf(b.Id));
-      
- //    updateRecordCon controller = new updateRecordCon();
- //      controller.updateRecord();
- 
- //      controller.init();    
- //   PageReference prf = controller.updateRecord();
- //    System.assertEquals(null, prf); //assertion
- //       Test.StopTest();
+ //       pageRef.getParameters().put('Id', String.valueOf(b.Id));
+    
+    @isTest static void BayBoat1Test(){
+       
+     //PageReference pageRef = Page.Bayinshore;
+     //   Test.setCurrentPage(pageRef);
+              
+     BoatSoldController cntr = new BoatSoldController();
+       PageReference pg = cntr.Bayinshore();
+       System.assertEquals('/apex/Bayinshore', pg); //assertion
     }
+
+    @isTest static void CenterinshoreBoat1test(){
+       
+        //PageReference pageRef = Page.Bayinshore;
+        //   Test.setCurrentPage(pageRef);
+                 
+        BoatSoldController cntr = new BoatSoldController();
+          PageReference pg = cntr.Centerinshore();
+          System.assertEquals('/apex/Centerinshore', pg); //assertion
+       }
 
 
 }
