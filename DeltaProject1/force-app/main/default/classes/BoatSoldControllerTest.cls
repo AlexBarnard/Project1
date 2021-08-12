@@ -29,5 +29,41 @@ public class BoatSoldControllerTest {
           System.assertNotEquals(null, pg); //assertion
        }
 
+       @isTest public static void FlatinshoreBoat1test(){
+       
+         PageReference pageRef = Page.Flatinshore;
+         //   Test.setCurrentPage(pageRef);
+                  
+         BoatSoldController cntr = new BoatSoldController();
+           PageReference pg = cntr.Flatinshore();
+           System.assertNotEquals(null, pg); //assertion
+        }
+        @isTest public static void CenteroffshoreBoat1test(){
+       
+         PageReference pageRef = Page.Centeroffshore;
+         //   Test.setCurrentPage(pageRef);
+                  
+         BoatSoldController cntr = new BoatSoldController();
+           PageReference pg = cntr.Centeroffshore();
+           System.assertNotEquals(null, pg); //assertion
+        }
+        @isTest public static void ConvertibleoffshoreBoat1test(){
+       
+         PageReference pageRef = Page.Convertibleoffshore;
+         //   Test.setCurrentPage(pageRef);
+                  
+         BoatSoldController cntr = new BoatSoldController();
+           PageReference pg = cntr.Convertibleoffshore();
+           System.assertNotEquals(null, pg); //assertion
+        }
+        @isTest public static void WalkaroundoffshoreBoat1test(){
+       
+         PageReference pageRef = Page.Walkaroundoffshore;
+         //   Test.setCurrentPage(pageRef);
+                  
+         BoatSoldController cntr = new BoatSoldController();
+           PageReference pg = cntr.Walkaroundoffshore();
+           System.assertNotEquals(null, pg); //assertion
+        }
 
 }
