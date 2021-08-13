@@ -1,6 +1,6 @@
 public class newPartsController {
     //whenever a user enters data, its stored in these variables.
-    Parts_Order_List__c parts;
+    public Parts_Order_List__c parts;
 
     public Parts_Order_List__c getParts() {
         if (parts == null) parts = new Parts_Order_List__c();
@@ -24,16 +24,10 @@ public class newPartsController {
         pr.setRedirect(true);
         return pr;
     }
-
-
     public PageReference save() {
-
         insert parts;
-
         Pagereference partPage = new ApexPages.StandardController(parts).view();
         partPage.setRedirect(true);
-
         return partPage;
     }
-
 }
