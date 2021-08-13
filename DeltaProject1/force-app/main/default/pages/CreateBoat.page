@@ -29,7 +29,7 @@
         <apex:inputField id="boatName" value="{!boatsold.name}"/>
         <apex:inputField id="boatDate" value="{!boatsold.Date_Sold__c}"/>
       
-      
+        <apex:inputField id="boatLength" value="{!boatsold.Boat_Length__c}"/>
         <apex:inputField id="boatEmail" value="{!boatsold.Email_of_Customer__c}"/>
         <apex:inputField id="boatPrice" value="{!boatsold.Price_Of_Boat__c}"/>
         <apex:inputField id="boatCustomer" value="{!boatsold.Sold_to__c}"/>
