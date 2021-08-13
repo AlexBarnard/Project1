@@ -6,6 +6,9 @@
 		<members>ManufacturingStartDate</members>
 		<members>BoatSoldController</members>
 		<members>BoatSoldControllerTest</members>
+		<members>newPartsController</members>
+		<members>EmptyManufacturingDateController</members>
+		<members>ManufacturingStartDateTest</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
