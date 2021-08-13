@@ -2,14 +2,14 @@
     <apex:form>
         <apex:pageBlock id="boatManufacturingList" title="Empty Manufacturing Start Dates">
             <apex:pageBlockTable value='{! boats}' var='b'>
-                <apex:column style="width:15%">
+                <apex:column>
                     <apex:commandButton value="SAVE" action="{!save}" reRender="boatManufacturingList">
                         <apex:param name="boatId" assignTo="{!boatId}" value="{!b.id}" /> </apex:commandButton>
                     <apex:commandButton value="CLEAR" action="{!clear}" reRender="boatManufacturingList">
                         <apex:param name="boatId" assignTo="{!boatId}" value="{!b.id}" />
                     </apex:commandButton>
                 </apex:column>
-                <apex:column headerValue="Name" style="width:30%">
+                <apex:column headerValue="Name">
                     <apex:outputLink value="{!URLFOR($Action.Boat_Manufacturing__c.View , b.id)}">
                         {!b.name}
                     </apex:outputLink>
