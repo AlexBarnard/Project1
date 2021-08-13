@@ -4,6 +4,8 @@
 		<members>CreateBoatTriggerHandler</members>
 		<members>CustomerDeletionHandler</members>
 		<members>ManufacturingStartDate</members>
+		<members>BoatSoldController</members>
+		<members>BoatSoldControllerTest</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
