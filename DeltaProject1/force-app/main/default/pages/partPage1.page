@@ -1,2 +1,2 @@
-<apex:page controller="newPartsController">
+<apex:page >
 </apex:page>
