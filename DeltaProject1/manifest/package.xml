@@ -19,7 +19,6 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
-		<members>Approval_Process</members>
 		<members>Customer_Email</members>
 		<members>Customer_Wizard</members>
 		<members>Parts_Order_Wizard</members>
