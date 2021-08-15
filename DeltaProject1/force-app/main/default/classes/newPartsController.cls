@@ -1,4 +1,4 @@
-public class newPartsController {
+public with sharing class newPartsController {
     //whenever a user enters data, its stored in these variables.
     public Parts_Order_List__c parts;
 
