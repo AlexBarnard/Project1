@@ -3,7 +3,7 @@ public class BoatSoldController {
     // This member variable maintain the state of the wizard.
    // When users enter data into the wizard, their input is stored
    // in these variables. 
-   Boat_Sold__c boatsold;
+   public Boat_Sold__c boatsold{get; set;}
    Integer boattype;
 
    public Pagereference boat1() {
