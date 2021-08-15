@@ -9,6 +9,8 @@
 		<members>newPartsController</members>
 		<members>EmptyManufacturingDateController</members>
 		<members>ManufacturingStartDateTest</members>
+		<members>CustomerInformationController</members>
+		<members>PartOrderEdit_CX</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
