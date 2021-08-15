@@ -4,7 +4,16 @@
 		<members>CreateBoatTriggerHandler</members>
 		<members>CustomerDeletionHandler</members>
 		<members>ManufacturingStartDate</members>
+		<members>BoatSoldController</members>
+		<members>BoatSoldControllerTest</members>
+		<members>newPartsController</members>
+		<members>EmptyManufacturingDateController</members>
+		<members>ManufacturingStartDateTest</members>
 		<name>ApexClass</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>ApexPage</name>
 	</types>
 	<types>
 		<members>*</members>
@@ -19,6 +28,16 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
+		<members>Home_Page_Default</members>
+		<members>Home_Page_Default1</members>
+		<members>Home_Page_Default2</members>
+		<members>Production_UtilityBar</members>
+		<members>Sales_UtilityBar</members>
+		<members>Supplier</members>
+		<name>FlexiPage</name>
+	</types>
+	<types>
+		<members>Approval_Process</members>
 		<members>Customer_Email</members>
 		<members>Customer_Wizard</members>
 		<members>Parts_Order_Wizard</members>
@@ -29,11 +48,25 @@
 		<name>GlobalValueSet</name>
 	</types>
 	<types>
+		<members>Boat_Manufacturing__c-Boat Manufacturing Layout</members>
+		<members>Boat_Sold__c-Boat Sold Layout</members>
+		<members>Boat_Sold__c-Inshore Fishing</members>
+		<members>Boat_Sold__c-Offshore Boat</members>
+		<members>Customer__c-Customer Layout</members>
+		<members>Parts_Order_List__c-Part Order List Layout</members>
+		<members>Supplier__c-Supplier Layout</members>
+		<name>Layout</name>
+	</types>
+	<types>
 		<members>Assembler</members>
 		<members>CEO</members>
 		<members>Chief Manufacturing Executive</members>
 		<members>Director of Sales</members>
 		<name>Profile</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>RecordType</name>
 	</types>
 	<types>
 		<members>*</members>
