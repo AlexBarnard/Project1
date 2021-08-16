@@ -140,6 +140,7 @@ public class BoatSoldControllerTest {
                  Pagereference pb = cntr.cancel();
                  System.assertNotEquals(null, pb); //assertion
               }
+    
               @isTest public static void WalkaroundoffshoreBoatSavetest(){
            
                PageReference pageRef = Page.Walkaroundoffshore;
