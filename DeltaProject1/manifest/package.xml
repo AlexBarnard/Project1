@@ -6,6 +6,12 @@
 		<members>ManufacturingStartDate</members>
 		<members>BoatSoldController</members>
 		<members>BoatSoldControllerTest</members>
+		<members>newPartsController</members>
+		<members>EmptyManufacturingDateController</members>
+		<members>ManufacturingStartDateTest</members>
+		<members>CustomerInformationController</members>
+		<members>PartOrderEdit_CX</members>
+		<members>Supplier_CC</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
@@ -62,13 +68,16 @@
 		<name>Profile</name>
 	</types>
 	<types>
-		<members>Boat_Sold__c.Inshore_Fishing_Boat</members>
-		<members>Boat_Sold__c.Offshore_Fishing_Boats</members>
+		<members>*</members>
 		<name>RecordType</name>
 	</types>
 	<types>
 		<members>*</members>
 		<name>Role</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>StaticResource</name>
 	</types>
 	<types>
 		<members>Boat_Sold__c.Email on boat sold</members>
