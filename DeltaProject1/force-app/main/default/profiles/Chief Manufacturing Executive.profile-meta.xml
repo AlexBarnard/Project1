@@ -19,6 +19,18 @@
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>
+        <apexClass>CommunitiesLandingController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CommunitiesLoginController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>CommunitiesSelfRegController</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>CreateBoatTriggerHandler</apexClass>
         <enabled>false</enabled>
     </classAccesses>
@@ -40,6 +52,10 @@
     </classAccesses>
     <classAccesses>
         <apexClass>ManufacturingStartDateTest</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MyProfilePageController</apexClass>
         <enabled>false</enabled>
     </classAccesses>
     <classAccesses>

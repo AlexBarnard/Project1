@@ -3,12 +3,16 @@
 	<types>
 		<members>BoatSoldController</members>
 		<members>BoatSoldControllerTest</members>
+		<members>CommunitiesLandingController</members>
+		<members>CommunitiesLoginController</members>
+		<members>CommunitiesSelfRegController</members>
 		<members>CreateBoatTriggerHandler</members>
 		<members>CustomerDeletionHandler</members>
 		<members>CustomerInformationController</members>
 		<members>EmptyManufacturingDateController</members>
 		<members>ManufacturingStartDate</members>
 		<members>ManufacturingStartDateTest</members>
+		<members>MyProfilePageController</members>
 		<members>PartOrderEdit_CX</members>
 		<members>Supplier_CC</members>
 		<members>newPartsController</members>
