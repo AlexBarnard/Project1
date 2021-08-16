@@ -3,8 +3,8 @@
         <apex:pageBlock id="PartOrdersList" title="Part Orders" mode="inlineEdit">
             <apex:pageMessages />
             <apex:pageBlockButtons>
-                <apex:commandButton value="Save" action="{!save}" rerender="PartOrdersList"/>
-                <apex:commandButton value="Cancel" action="{!cancel}" rerender="PartOrdersList"/>
+                <apex:commandButton value="Save" action="{!save}"/>
+                <apex:commandButton value="Cancel" action="{!cancel}"/>
             </apex:pageBlockButtons>
             <apex:pageBlockTable var="Part" value="{!PartOrdersList}">
                 <apex:column headerValue="Part Type">

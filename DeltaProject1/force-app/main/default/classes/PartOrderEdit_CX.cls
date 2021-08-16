@@ -15,5 +15,16 @@ public with sharing class PartOrderEdit_CX {
     public PartOrderEdit_CX(ApexPages.StandardSetController Controller) {
         stdController = Controller;
     }
+    public PageReference save() {
+        update parts;
+        PageReference partPage = new PageReference('/'+Schema.SObjectType.Parts_Order_List__c.getKeyPrefix());
+        partPage.setRedirect(true);
+        return partPage;
+    }
+    public PageReference cancel() {
+        PageReference partPage = new PageReference('/'+Schema.SObjectType.Parts_Order_List__c.getKeyPrefix());
+        partPage.setRedirect(true);
+        return partPage;
+    }
 }
 

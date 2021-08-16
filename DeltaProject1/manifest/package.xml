@@ -11,6 +11,7 @@
 		<members>ManufacturingStartDateTest</members>
 		<members>CustomerInformationController</members>
 		<members>PartOrderEdit_CX</members>
+		<members>Supplier_CC</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
@@ -73,6 +74,10 @@
 	<types>
 		<members>*</members>
 		<name>Role</name>
+	</types>
+	<types>
+		<members>*</members>
+		<name>StaticResource</name>
 	</types>
 	<types>
 		<members>Boat_Sold__c.Email on boat sold</members>
