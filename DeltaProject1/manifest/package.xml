@@ -108,6 +108,10 @@
 		<name>Layout</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>Network</name>
+	</types>
+	<types>
 		<members>Admin</members>
 		<members>Assembler</members>
 		<members>CEO</members>
