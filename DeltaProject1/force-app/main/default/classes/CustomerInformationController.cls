@@ -24,12 +24,15 @@ public with sharing class CustomerInformationController {
         return Page.PreApproval3;
     }
     // cancel button
-    public PageReference cancel(){
-       PageReference customerDetailPage = page.PreApproval;
-       customerDetailPage.setRedirect(true);
-        return customerDetailPage;
-    } 
-    
+    public PageReference cancel() {
+
+          string url = 'https://deltaforce1-developer-edition.na162.force.com/s/';
+
+          PageReference page = new PageReference(url);
+          page.setRedirect(true);
+          return page;
+    }
+
     // Save Button
     Public pageReference save(){
       PageReference CustomerPage = page.CustomerPage;
