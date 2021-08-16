@@ -140,24 +140,24 @@ public class BoatSoldControllerTest {
                  Pagereference pb = cntr.cancel();
                  System.assertNotEquals(null, pb); //assertion
               }
-//              @isTest public static void WalkaroundoffshoreBoatSavetest(){
-//           
-//               PageReference pageRef = Page.Walkaroundoffshore;
-//               //   Test.setCurrentPage(pageRef);
-//               //Customer__c c1 = [SELECT ID,NAME FROM CUSTOMER__C LIMIT 1];
-//               BoatSoldController cntr = new BoatSoldController();
-//                 PageReference pf = cntr.Walkaroundoffshore();
-//                 PageReference pg = cntr.boat6();
-//                 //cntr.boatsold(new Boat_Sold__c(name='dave'));
-//                 cntr.boatsold = new Boat_Sold__c();
-//                 cntr.boatsold.name = 'dave';
-//                 cntr.boatsold.Email_of_Customer__c = 'dws@gmail.com';
-//                 cntr.boatsold.Price_of_Boat__c = 45000;
-//                 cntr.boatsold.Sold_to__c = 'a025e000007BTe6AAG';
-//                 cntr.boatsold.Date_Sold__c = System.today();
-//                 cntr.getboatsold();
-//                 Pagereference pb = cntr.save();
-//                 System.assertNotEquals(null, pb); //assertion
-//              }
+              @isTest public static void WalkaroundoffshoreBoatSavetest(){
+           
+               PageReference pageRef = Page.Walkaroundoffshore;
+               //   Test.setCurrentPage(pageRef);
+               //Customer__c c1 = [SELECT ID,NAME FROM CUSTOMER__C LIMIT 1];
+               BoatSoldController cntr = new BoatSoldController();
+                 PageReference pf = cntr.Walkaroundoffshore();
+                 PageReference pg = cntr.boat6();
+                 //cntr.boatsold(new Boat_Sold__c(name='dave'));
+                 cntr.boatsold = new Boat_Sold__c();
+                 cntr.boatsold.name = 'dave';
+                 cntr.boatsold.Email_of_Customer__c = 'dws@gmail.com';
+                 cntr.boatsold.Price_of_Boat__c = 45000;
+                 cntr.boatsold.Sold_to__c = 'a025e000007BTe6AAG';
+                 cntr.boatsold.Date_Sold__c = System.today();
+                 cntr.getboatsold();
+                 Pagereference pb = cntr.save();
+                 System.assertNotEquals(null, pb); //assertion
+              }
 
 }
