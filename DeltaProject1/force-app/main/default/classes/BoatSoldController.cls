@@ -3,7 +3,7 @@ public class BoatSoldController {
     // This member variable maintain the state of the wizard.
    // When users enter data into the wizard, their input is stored
    // in these variables. 
-   public Boat_Sold__c boatsold{get; set;}
+   public Boat_Sold__c boatsold;
    Integer boattype;
 
    public Pagereference boat1() {
@@ -76,13 +76,13 @@ public class BoatSoldController {
    // This method performs save for the Boat_Sold, and
    // then returns the user to the Boat_Sold Home page.
    public PageReference save() {
-       insert boatsold;
+        insert boatsold;
        
-       PageReference boatPage = new PageReference('/'+ Schema.SObjectType.Boat_Sold__c.getKeyPrefix());
-      boatPage.setRedirect(true);
+        PageReference boatPage = new PageReference('/'+ Schema.SObjectType.Boat_Sold__c.getKeyPrefix());
+        boatPage.setRedirect(true);
 
-      return boatPage;
-   }
+        return boatPage;
+    }
     
     public PageReference Bayinshore() {
         return Page.Bayinshore;
