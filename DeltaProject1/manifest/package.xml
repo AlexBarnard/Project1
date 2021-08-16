@@ -23,6 +23,19 @@
 		<name>ApexTrigger</name>
 	</types>
 	<types>
+		<members>Pursuit</members>
+		<members>PursuitS268</members>
+		<members>Pursuit_Image</members>
+		<members>Pursuit_Image1</members>
+		<members>Pursuitfeatured</members>
+		<members>X7504306_20200629070731305_1_LARGE</members>
+		<members>X75626849765ae0cef9d86b9a84df4cba</members>
+		<members>download_1</members>
+		<members>download_11</members>
+		<members>pursuit_boats_oval_boat_logo_decal</members>
+		<name>ContentAsset</name>
+	</types>
+	<types>
 		<members>Production</members>
 		<members>Sales</members>
 		<name>CustomApplication</name>
