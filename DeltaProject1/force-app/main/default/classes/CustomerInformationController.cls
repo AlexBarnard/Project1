@@ -34,7 +34,7 @@ public with sharing class CustomerInformationController {
     }
 
     // Save Button
-    Public pageReference save(){
+    public pageReference save(){
       PageReference CustomerPage = page.CustomerPage;
       CustomerPage.setRedirect(true);  
         

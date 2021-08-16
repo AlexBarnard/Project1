@@ -161,7 +161,9 @@
         <type>Text</type>
     </nameField>
     <pluralLabel>Boat Manufacturings</pluralLabel>
-    <searchLayouts></searchLayouts>
+    <searchLayouts>
+        <listViewButtons>Boat_Button</listViewButtons>
+    </searchLayouts>
     <sharingModel>ReadWrite</sharingModel>
     <visibility>Public</visibility>
 </CustomObject>

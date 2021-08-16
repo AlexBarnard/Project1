@@ -18,8 +18,8 @@
         }
     </style>
 
-    <Apex:form>
-        <apex:pageBlock>
+    <Apex:form >
+        <apex:pageBlock >
 
 
             <h1> ALMOST DONE! </h1>
@@ -34,7 +34,7 @@
             <H2>TO DISCUSS OPTIONS TO OBTAIN YOUR
                 <em>DREAM BOAT!!</em>
             </h2>
-            <apex:pageBlockButtons>
+            <apex:pageBlockButtons >
                 <apex:commandButton action="{!cancel}" value="Return to Home" />
             </apex:pageBlockButtons>
         </apex:pageBlock>

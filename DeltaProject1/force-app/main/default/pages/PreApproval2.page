@@ -9,9 +9,9 @@
     </script>
 
     <apex:sectionHeader title="Financial Application" subtitle="Step 2 of 3" />
-    <apex:form>
+    <apex:form >
         <apex:pageBlock title="Financial Information">
-            <apex:pageBlockButtons>
+            <apex:pageBlockButtons >
                 <apex:commandButton action="{!Step1}" value="Previous" />
                 <apex:commandButton action="{!Step3}" value="Next" />
                 <apex:commandButton action="{!Cancel}" value="Cancel" onclick="return confirmCancel()" immediate="true" />

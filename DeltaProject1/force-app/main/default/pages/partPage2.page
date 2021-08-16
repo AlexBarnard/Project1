@@ -8,9 +8,9 @@
         }
     </script>
     <apex:sectionHeader title="New Part Order" subtitle="Step 2 of 3"/>
-        <apex:form>
+        <apex:form >
             <apex:pageBlock title="Part Informaiton" mode="edit">
-                <apex:pageBlockButtons>
+                <apex:pageBlockButtons >
                     <apex:commandButton action="{!step1}" value="Previous"/>
                     <apex:commandButton action="{!step3}" value="Next"/>
                     <apex:commandButton action="{!cancel}" value="Cancel" onclick="return confirmCancel()" immediate="true"/>

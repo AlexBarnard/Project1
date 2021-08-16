@@ -4,14 +4,18 @@
         <itemInstances>
             <componentInstance>
                 <componentInstanceProperties>
-                    <name>flowLayout</name>
-                    <value>oneColumn</value>
+                    <name>height</name>
+                    <value>600</value>
                 </componentInstanceProperties>
                 <componentInstanceProperties>
-                    <name>flowName</name>
-                    <value>Parts_Order_Wizard</value>
+                    <name>pageName</name>
+                    <value>PartOrderEditPage</value>
                 </componentInstanceProperties>
-                <componentName>flowruntime:interview</componentName>
+                <componentInstanceProperties>
+                    <name>showLabel</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:visualforcePage</componentName>
             </componentInstance>
         </itemInstances>
         <itemInstances>
@@ -57,6 +61,23 @@
         <itemInstances>
             <componentInstance>
                 <componentName>home:assistant</componentName>
+            </componentInstance>
+        </itemInstances>
+        <itemInstances>
+            <componentInstance>
+                <componentInstanceProperties>
+                    <name>height</name>
+                    <value>700</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>pageName</name>
+                    <value>partPage1</value>
+                </componentInstanceProperties>
+                <componentInstanceProperties>
+                    <name>showLabel</name>
+                    <value>true</value>
+                </componentInstanceProperties>
+                <componentName>flexipage:visualforcePage</componentName>
             </componentInstance>
         </itemInstances>
         <mode>Replace</mode>
