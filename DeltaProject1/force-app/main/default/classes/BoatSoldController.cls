@@ -4,9 +4,7 @@ public class BoatSoldController {
    // When users enter data into the wizard, their input is stored
    // in these variables. 
    public Boat_Sold__c boatsold;
-
-   public Integer boattype;
-
+   Integer boattype;
 
    public Pagereference boat1() {
         boattype = 1;
