@@ -49,6 +49,10 @@
 		<name>CustomObject</name>
 	</types>
 	<types>
+		<members>*</members>
+		<name>CustomSite</name>
+	</types>
+	<types>
 		<members>Boat_Manufacturing__c</members>
 		<members>Boat_Sold__c</members>
 		<members>Customer__c</members>
