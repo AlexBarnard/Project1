@@ -57,6 +57,7 @@
 		<members>Boat_Manufacturing__c</members>
 		<members>Boat_Sold__c</members>
 		<members>Customer__c</members>
+		<members>Knowledge__kav</members>
 		<members>Parts_Order_List__c</members>
 		<members>Supplier__c</members>
 		<name>CustomObject</name>
