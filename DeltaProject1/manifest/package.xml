@@ -3,17 +3,22 @@
 	<types>
 		<members>BoatSoldController</members>
 		<members>BoatSoldControllerTest</members>
+		<members>ChangePasswordController</members>
 		<members>CommunitiesLandingController</members>
 		<members>CommunitiesLoginController</members>
+		<members>CommunitiesSelfRegConfirmController</members>
 		<members>CommunitiesSelfRegController</members>
 		<members>CreateBoatTriggerHandler</members>
 		<members>CustomerDeletionHandler</members>
 		<members>CustomerInformationController</members>
 		<members>EmptyManufacturingDateController</members>
+		<members>ForgotPasswordController</members>
 		<members>ManufacturingStartDate</members>
 		<members>ManufacturingStartDateTest</members>
 		<members>MyProfilePageController</members>
 		<members>PartOrderEdit_CX</members>
+		<members>SiteLoginController</members>
+		<members>SiteRegisterController</members>
 		<members>Supplier_CC</members>
 		<members>newPartsController</members>
 		<name>ApexClass</name>
