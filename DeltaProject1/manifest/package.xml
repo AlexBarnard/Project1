@@ -121,6 +121,12 @@
 		<name>Profile</name>
 	</types>
 	<types>
+		<members>Boat_Sold__c.Inshore_Fishing_Boat</members>
+		<members>Boat_Sold__c.Offshore_Fishing_Boats</members>
+		<members>Knowledge__kav.FAQ</members>
+		<name>RecordType</name>
+	</types>
+	<types>
 		<members>*</members>
 		<name>Role</name>
 	</types>
