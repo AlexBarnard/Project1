@@ -15,5 +15,9 @@ public with sharing class PartOrderEdit_CX {
     public PartOrderEdit_CX(ApexPages.StandardSetController Controller) {
         stdController = Controller;
     }
+
+    public PageReference listView() {
+        return new ApexPages.Action('{!List}').invoke();
+    }
 }
 
