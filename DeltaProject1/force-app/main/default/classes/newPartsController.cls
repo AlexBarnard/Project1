@@ -25,9 +25,15 @@ public with sharing class newPartsController {
         return pr;
     }
     public PageReference save() {
+        try{
         insert parts;
         Pagereference partPage = new ApexPages.StandardController(parts).view();
         partPage.setRedirect(true);
         return partPage;
+            }catch(Exception e){
+                ApexPages.addMessage(new ApexPages.Message(ApexPages.Severity.Error, e.getMessage()));
+            }
+            return null;
+
     }
 }
