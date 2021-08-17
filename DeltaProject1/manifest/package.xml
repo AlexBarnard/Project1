@@ -4,6 +4,11 @@
 		<members>CreateBoatTriggerHandler</members>
 		<members>CustomerDeletionHandler</members>
 		<members>ManufacturingStartDate</members>
+		<members>BoatSoldController</members>
+		<members>BoatSoldControllerTest</members>
+		<members>newPartsController</members>
+		<members>EmptyManufacturingDateController</members>
+		<members>ManufacturingStartDateTest</members>
 		<name>ApexClass</name>
 	</types>
 	<types>
@@ -60,8 +65,7 @@
 		<name>Profile</name>
 	</types>
 	<types>
-		<members>Boat_Sold__c.Inshore_Fishing_Boat</members>
-		<members>Boat_Sold__c.Offshore_Fishing_Boats</members>
+		<members>*</members>
 		<name>RecordType</name>
 	</types>
 	<types>
