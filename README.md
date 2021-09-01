@@ -19,7 +19,14 @@ For this project, Team Amplifier decided to work on Alex Barnard's Project 0 whi
   9. Click Finish
 
 ## Usage
+Customer Site
+
 ![image](https://user-images.githubusercontent.com/87335458/131747514-49668d6e-de5f-409f-b830-9b61c38e09c1.png)
+
+Employee Portal
+
+![image](https://user-images.githubusercontent.com/87335458/131747664-f8870e22-8434-4929-ba86-e092eb1f87d3.png)
+
 
 ## Contributors
 * [Michael Erickson](https://github.com/michaelerickson98)
