@@ -4,7 +4,24 @@
 For this project, Team Amplifier decided to work on Alex Barnard's Project 0 which was modeled after a boat manufacturing business, called Pursuit Boats. Each member of the team was tasked with creating a Visualforce page and to surface the said Visualforce pages on an Expierence Cloud Site.
 
 ## Technologies Used
-Apex, Apex Testing, HTML, CSS, JavaScript, Visualforce, Process Builder, Sales Cloud, Service Cloud, Workflow Rules, Validation Rules, UI Customization, Flow Builder, Security and Access, Data Modeling, Scrumban, Apex Triggers, Experience Cloud
+* Apex
+* Apex Testing
+* HTML
+* CSS
+* JavaScript
+* Visualforce
+* Process Builder
+* Sales Cloud
+* Service Cloud
+* Workflow Rules
+* Validation Rules
+* UI Customization
+* Flow Builder
+* Security and Access
+* Data Modeling
+* Scrumban
+* Apex Triggers
+* Experience Cloud
 
 ## Features
 * Customer Site
