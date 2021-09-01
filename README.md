@@ -1,10 +1,9 @@
 # Project 1
 
 ## Project Description
-Pursuit Boat provides an Experience Cloud site where employees can use Visualforce pages to create boat parts and orders. Customers can also login to the site to make use of Visualforce pages that allow them to register as customers of Pursuit Boat.
-
+For this project, Team Amplifier decided to work on Alex Barnard's Project 0 which was modeled after a boat manufacturing business, called Pursuit Boats. Each member of the team was tasked with creating a Visualforce page and to surface the said Visualforce pages on an Expierence Cloud Site.
 ## Technologies Used
-Apex, Apex Testing, HTML, CSS, JavaScript, Visualforce, Process Builder, Sales Cloud, Service Cloud, Workflow Rules, Validation Rules, UI Customization, Flow Builder, Security and Access, Data Modeling, Scrumban, Apex Triggers, Experience Cloud
+* Tech 1
 
 ## Features
 
@@ -20,6 +19,7 @@ Apex, Apex Testing, HTML, CSS, JavaScript, Visualforce, Process Builder, Sales C
   9. Click Finish
 
 ## Usage
+![image](https://user-images.githubusercontent.com/87335458/131747514-49668d6e-de5f-409f-b830-9b61c38e09c1.png)
 
 ## Contributors
 * [Michael Erickson](https://github.com/michaelerickson98)
