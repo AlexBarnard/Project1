@@ -33,16 +33,16 @@ For this project, Team Amplifier decided to work on Alex Barnard's Project 0 whi
 * Boat Creation Visualforce Wizard Page
 
 ## Getting Started
-  1. Enable digital Experiences (setup => Feature Settings => Digital Experience => Settings)
-  2. After checking the box to enable digital experiences you need to put in a domain name
-  3. Then Click Save
-  4. Enable Lightning Knowledge (Service Setup => Recommended Setup => View all)
-  5. Search Knowledge Setup
-  6. In Knowledge Setup Click Start
-  7. Click Next
-  8. Click Next
-  9. Click Finish
-  10. Inside VisualStudio Code run the deploy command (sfdx force:source:deploy .\This-is-your-path-to-manifest-file\
+  1. Enable digital Experiences (setup => Feature Settings => Digital Experience => Settings).
+  2. After checking the box to enable digital experiences you need to put in a domain name.
+  3. Then Click Save.
+  4. Enable Lightning Knowledge (Service Setup => Recommended Setup => View all).
+  5. Search Knowledge Setup.
+  6. In Knowledge Setup Click Start.
+  7. Click Next.
+  8. Click Next.
+  9. Click Finish.
+  10. Inside VisualStudio Code run the deploy command (sfdx force:source:deploy .\This-is-your-path-to-manifest-file\ .
 
 ## Usage
 Customer Site
