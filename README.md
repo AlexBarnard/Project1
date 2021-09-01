@@ -42,6 +42,7 @@ For this project, Team Amplifier decided to work on Alex Barnard's Project 0 whi
   7. Click Next
   8. Click Next
   9. Click Finish
+  10. Inside VisualStudio Code run the deploy command (sfdx force:source:deploy .\This-is-your-path-to-manifest-file\
 
 ## Usage
 Customer Site
