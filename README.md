@@ -1,9 +1,10 @@
 # Project 1
 
 ## Project Description
+Pursuit Boat provides an Experience Cloud site where employees can use Visualforce pages to create boat parts and orders. Customers can also login to the site to make use of Visualforce pages that allow them to register as customers of Pursuit Boat.
 
 ## Technologies Used
-* Tech 1
+Apex, Apex Testing, HTML, CSS, JavaScript, Visualforce, Process Builder, Sales Cloud, Service Cloud, Workflow Rules, Validation Rules, UI Customization, Flow Builder, Security and Access, Data Modeling, Scrumban, Apex Triggers, Experience Cloud
 
 ## Features
 
