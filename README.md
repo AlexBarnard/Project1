@@ -2,10 +2,18 @@
 
 ## Project Description
 For this project, Team Amplifier decided to work on Alex Barnard's Project 0 which was modeled after a boat manufacturing business, called Pursuit Boats. Each member of the team was tasked with creating a Visualforce page and to surface the said Visualforce pages on an Expierence Cloud Site.
+
 ## Technologies Used
-* Tech 1
+Apex, Apex Testing, HTML, CSS, JavaScript, Visualforce, Process Builder, Sales Cloud, Service Cloud, Workflow Rules, Validation Rules, UI Customization, Flow Builder, Security and Access, Data Modeling, Scrumban, Apex Triggers, Experience Cloud
 
 ## Features
+* Customer Site
+* Employee Portal
+* Supplier Query Visualforce Page
+* Parts Edit Visualforce Page
+* Part Creation Visualforce Wizard Page
+* Manufacturing Start Date List Filter Visualforce Page
+* Boat Creation Visualforce Wizard Page
 
 ## Getting Started
   1. Enable digital Experiences (setup => Feature Settings => Digital Experience => Settings)
